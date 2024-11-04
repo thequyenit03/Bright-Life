@@ -1,12 +1,7 @@
-.img-carousel {
-    width: 100%; /* Đặt chiều rộng của ảnh */
-    height: 700px; /* Đặt chiều cao của ảnh */
-    object-fit: cover; /* Đảm bảo ảnh bao phủ toàn bộ vùng mà không bị biến dạng */
-    display: flex; /* Sử dụng flexbox để căn giữa */
-    justify-content: center;
-    align-items: center;
+.equal-height {
+    height: 400px; /* Chiều cao tùy chỉnh theo ý muốn */
+    object-fit: cover; /* Giúp ảnh hiển thị phù hợp trong khung */
 }
-
 
 /*** Spinner Start ***/
 #spinner {
@@ -266,89 +261,19 @@
     }
 }
 /*** Navbar End ***/
+/*Carousel Start*/
 
-
-/*** Carousel Hero Header Start ***/
-.header-carousel .header-carousel-item {
-    height: 700px;
-}
-
-.header-carousel .owl-nav .owl-prev,
-.header-carousel .owl-nav .owl-next {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
-    background: var(--bs-light);
-    color: var(--bs-primary);
-    font-size: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.5s;
-}
-
-.header-carousel .owl-nav .owl-prev {
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: 30px;
-}
-.header-carousel .owl-nav .owl-next {
-    bottom: 30px;
-    right: 50%;
-    transform: translateX(-50%);
-    margin-right: 30px;
-}
-
-.header-carousel .owl-nav .owl-prev:hover,
-.header-carousel .owl-nav .owl-next:hover {
-    box-shadow: inset 0 0 100px 0 var(--bs-secondary);
-    color: var(--bs-white);
-}
-
-.header-carousel .header-carousel-item .carousel-caption {
-    position: absolute;
+.carousel-inner .carousel-item {
     width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .2);
-    display: flex;
-    align-items: center;
 }
 
-@media (max-width: 991px) {
-    .header-carousel .header-carousel-item .carousel-caption {
-        padding-top: 45px;
-    }
-
-    .header-carousel .header-carousel-item {
-        height: 1300px;
-    }
+.carousel-inner .carousel-item img {
+    height: 650px; /* Điều chỉnh chiều cao ảnh theo yêu cầu */
+    width: 100%; /* Chiều rộng của ảnh là 100% của carousel */
+    object-fit: cover; /* Giữ nguyên tỉ lệ ảnh và không cắt xén */
 }
 
-@media (max-width: 767px) {
-    .header-carousel .header-carousel-item {
-        height: 950px;
-    }
-
-    .header-carousel .owl-nav .owl-prev {
-        bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-left: -45px;
-    }
-
-    .header-carousel .owl-nav .owl-next {
-        bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-left: 45px;
-    }
-}
-/*** Carousel Hero Header End ***/
-
+/*Carousel End*/
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
@@ -459,10 +384,11 @@
 
 .service .service-item .service-img img {
     transition: 0.5s;
+    height: 300px;
 }
 
 .service .service-item:hover .service-img img {
-    transform: scale(1.1);
+    transform: scale(1.1);    
 }
 
 .service .service-item .service-img::after {
