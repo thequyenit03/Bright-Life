@@ -7,6 +7,8 @@ import { BlogsComponent } from './components/blogs/blogs.component';
 import { DocterExpertsComponent } from './components/docter-experts/docter-experts.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { VisionMissionComponent } from './components/vision-mission/vision-mission.component';
+import { BookingComponent } from './components/booking/booking.component';
+import { FormAnswerQuestionComponent } from './components/form-answer-question/form-answer-question.component';
 
 export const routes: Routes = [
     { path: '',component: HomeComponent   },
@@ -15,5 +17,7 @@ export const routes: Routes = [
     {path: 'blogs', component: BlogsComponent},
     {path: 'docter_experts', component: DocterExpertsComponent},
     {path: 'vision-mission', component: VisionMissionComponent},
-    {path: 'contact', component: ContactComponent}
+    {path: 'contact', component: ContactComponent},
+    {path: 'booking', component: BookingComponent},
+    {path:'faq', component: FormAnswerQuestionComponent}
 ];

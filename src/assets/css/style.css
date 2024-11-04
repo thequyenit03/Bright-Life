@@ -1,6 +1,15 @@
+.doctor-img {
+    height: 400px;
+    /* Adjust the height as needed */
+    object-fit: cover;
+    /* Maintain aspect ratio */
+    width: 300px;   
+}
 .equal-height {
-    height: 400px; /* Chiều cao tùy chỉnh theo ý muốn */
-    object-fit: cover; /* Giúp ảnh hiển thị phù hợp trong khung */
+    height: 400px;
+    /* Chiều cao tùy chỉnh theo ý muốn */
+    object-fit: cover;
+    /* Giúp ảnh hiển thị phù hợp trong khung */
 }
 
 /*** Spinner Start ***/
@@ -16,6 +25,7 @@
     visibility: visible;
     opacity: 1;
 }
+
 /*** Spinner End ***/
 
 .back-to-top {
@@ -101,7 +111,7 @@
 }
 
 
-/*** Topbar Start ***/ 
+/*** Topbar Start ***/
 .topbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -126,6 +136,7 @@
     transition: .5s;
     opacity: 1;
 }
+
 /*** Topbar End ***/
 
 
@@ -260,6 +271,7 @@
         opacity: 1;
     }
 }
+
 /*** Navbar End ***/
 /*Carousel Start*/
 
@@ -268,9 +280,12 @@
 }
 
 .carousel-inner .carousel-item img {
-    height: 650px; /* Điều chỉnh chiều cao ảnh theo yêu cầu */
-    width: 100%; /* Chiều rộng của ảnh là 100% của carousel */
-    object-fit: cover; /* Giữ nguyên tỉ lệ ảnh và không cắt xén */
+    height: 650px;
+    /* Điều chỉnh chiều cao ảnh theo yêu cầu */
+    width: 100%;
+    /* Chiều rộng của ảnh là 100% của carousel */
+    object-fit: cover;
+    /* Giữ nguyên tỉ lệ ảnh và không cắt xén */
 }
 
 /*Carousel End*/
@@ -294,6 +309,7 @@
 .bg-breadcrumb .breadcrumb .breadcrumb-item a {
     color: var(--bs-white);
 }
+
 /*** Single Page Hero Header End ***/
 
 
@@ -354,6 +370,7 @@
 .feature .feature-item:hover .feature-icon {
     color: var(--bs-white);
 }
+
 .feature .feature-item:hover h4,
 .feature .feature-item:hover p {
     color: var(--bs-white);
@@ -368,6 +385,7 @@
     background: var(--bs-dark);
     color: var(--bs-white);
 }
+
 /*** Feature End ***/
 
 
@@ -375,6 +393,7 @@
 .service .service-item {
     border-radius: 10px;
 }
+
 .service .service-item .service-img {
     position: relative;
     overflow: hidden;
@@ -388,7 +407,7 @@
 }
 
 .service .service-item:hover .service-img img {
-    transform: scale(1.1);    
+    transform: scale(1.1);
 }
 
 .service .service-item .service-img::after {
@@ -493,6 +512,7 @@
 .service .service-item:hover .service-content::after {
     height: 100%;
 }
+
 /*** Service End ***/
 
 
@@ -507,6 +527,7 @@
     color: var(--bs-primary);
     background: var(--bs-light);
 }
+
 /*** FAQs End ***/
 
 
@@ -581,6 +602,7 @@
 .blog .blog-item:hover .blog-content a.btn:hover {
     color: var(--bs-primary);
 }
+
 /*** Blog End ***/
 
 
@@ -590,7 +612,7 @@
     overflow: hidden;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-} 
+}
 
 .team .team-item .team-img img {
     transition: 0.5s;
@@ -645,6 +667,7 @@
 .team .team-item:hover .team-title {
     background: var(--bs-dark);
 }
+
 /*** Team End ***/
 
 
@@ -685,6 +708,7 @@
     background: var(--bs-dark);
     color: var(--bs-white);
 }
+
 /*** Testimonial End ***/
 
 
@@ -692,7 +716,11 @@
 .contact .contact-img {
     position: relative;
 }
-
+.contact .contact-img img{
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+}
 .contact .contact-img::after {
     content: "";
     position: absolute;
@@ -712,21 +740,32 @@
 }
 
 @keyframes image-efects {
-    0%  {border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;}
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
 
-    25% {border-radius: 35% 65% 27% 73% / 71% 25% 75% 29%;}
+    25% {
+        border-radius: 35% 65% 27% 73% / 71% 25% 75% 29%;
+    }
 
-    50% {border-radius: 41% 59% 45% 55% / 32% 21% 79% 68%;}
+    50% {
+        border-radius: 41% 59% 45% 55% / 32% 21% 79% 68%;
+    }
 
-    75% {border-radius: 69% 31% 39% 61% / 70% 83% 17% 30%;}
+    75% {
+        border-radius: 69% 31% 39% 61% / 70% 83% 17% 30%;
+    }
 
-    100% {border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;}
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
 }
 
 .contact .contact-img .contact-img-inner {
     position: relative;
     z-index: 9;
 }
+
 /*** Contact End ***/
 
 
@@ -811,6 +850,7 @@
 .footer .footer-item .footer-btn a:hover i {
     color: var(--bs-white);
 }
+
 /*** Footer End ***/
 
 
@@ -819,6 +859,5 @@
     background: var(--bs-dark);
     border-top: 1px solid rgba(255, 255, 255, .08);
 }
+
 /*** copyright end ***/
-
-

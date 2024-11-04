@@ -13,7 +13,7 @@
                     <p class="text-dark"><i class="fa fa-award text-primary me-3"></i>Giải thưởng quốc tế về quản lý kinh doanh</p>
                     <p class="text-dark"><i class="fa fa-award text-primary me-3"></i>Giải thưởng Công ty được quản lý tốt nhất của Deloitte</p>
                     <p class="text-dark mb-4"><i class="fa fa-award text-primary me-3"></i>Bright Life được công nhận là Trung tâm y tế xuất sắc</p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5" href="#">Xem thêm</a>
+                    <a (click)="navigateTo('about')" class="btn btn-primary rounded-pill py-3 px-5"  >Xem thêm</a>
                 </div>
             </div>
             <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
@@ -87,9 +87,9 @@
                     </div>
                     <div class="service-content p-4">
                         <div class="service-content-inner">
-                            <a href="#" class="d-inline-block h4 mb-4">Bảo hiểm y tế</a>
+                            <a (click)="navigateTo('about')"   class="d-inline-block h4 mb-4">Bảo hiểm y tế</a>
                             <p class="mb-4">Bệnh nhân được nhận nhiều đãi ngộ đối với người có bảo hiểm y tế theo chính sách của nhà nước.</p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Đọc thêm</a>
+                            <a (click)="navigateTo('about')" class="btn btn-primary rounded-pill py-2 px-4"  >Đọc thêm</a>
                         </div>
                     </div>
                 </div>
@@ -104,9 +104,9 @@
                     </div>
                     <div class="service-content p-4">
                         <div class="service-content-inner">
-                            <a href="#" class="d-inline-block h4 mb-4">Phòng bệnh</a>
+                            <a (click)="navigateTo('about')"   class="d-inline-block h4 mb-4">Phòng bệnh</a>
                             <p class="mb-4">Với hơn 200 phòng bênh, đáp ứng đầy đủ các tiêu chuẩn quốc tế. Bright Life tự hào khi là bệnh viện nằm trong top các bệnh viện có phòng hiện đại nhất.</p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Đọc thêm</a>
+                            <a (click)="navigateTo('about')" class="btn btn-primary rounded-pill py-2 px-4"  >Đọc thêm</a>
                         </div>
                     </div>
                 </div>
@@ -121,9 +121,9 @@
                     </div>
                     <div class="service-content p-4">
                         <div class="service-content-inner">
-                            <a href="#" class="d-inline-block h4 mb-4">Cấp cứu</a>
+                            <a (click)="navigateTo('about')"   class="d-inline-block h4 mb-4">Cấp cứu</a>
                             <p class="mb-4">Với 10 xe cấp cứu và 30 cán bộ, nhân viên y tế túc trực 24/24 đảm bảo luôn tiếp nhận và sẵn sàng trong mọi tình huống.</p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Đọc thêm</a>
+                            <a (click)="navigateTo('about')" class="btn btn-primary rounded-pill py-2 px-4"  >Đọc thêm</a>
                         </div>
                     </div>
                 </div>
@@ -138,15 +138,15 @@
                     </div>
                     <div class="service-content p-4">
                         <div class="service-content-inner">
-                            <a href="#" class="d-inline-block h4 mb-4">Khám tại nhà</a>
+                            <a (click)="navigateTo('about')"   class="d-inline-block h4 mb-4">Khám tại nhà</a>
                             <p class="mb-4">Nhằm đáp ứng nhu cầu khám chữa tại nhà, Bright Life luôn đặt nhu cầu của khách hàng lên hàng đầu. Những trường hợp không cần trực tiếp tới bệnh viện có thể được khám tại nhà.</p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Đọc thêm</a>
+                            <a (click)="navigateTo('about')" class="btn btn-primary rounded-pill py-2 px-4"  >Đọc thêm</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-                <a class="btn btn-primary rounded-pill py-3 px-5" href="#">Xem thêm</a>
+                <a (click)="navigateTo('about')" class="btn btn-primary rounded-pill py-3 px-5"  >Xem thêm</a>
             </div>
         </div>
     </div>
@@ -162,10 +162,7 @@
             <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="blog-item">
                     <div class="blog-img">
-                        <img src="assets/img/news-1.jpg" class="img-fluid rounded-top w-100" alt="">
-                        <div class="blog-categiry py-2 px-4">
-                            <span>Business</span>
-                        </div>
+                        <img src="assets/img/news-1.jpg" class="img-fluid rounded-top w-100" alt="">                        
                     </div>
                     <div class="blog-content p-4">
                         <div class="blog-comment d-flex justify-content-between mb-3">
@@ -173,19 +170,16 @@
                             <div class="small"><span class="fa fa-calendar text-primary"></span> 30/10/2024</div>
                             <div class="small"><span class="fa fa-comment-alt text-primary"></span> 17 Bình luận</div>
                         </div>
-                        <a href="#" class="h4 d-inline-block mb-3 text-center w-100">Bright Life nhận bằng khen của Bộ Y tế vì đóng góp tích cực cho cộng đồng</a>
+                        <a (click)="navigateTo('about')"   class="h4 d-inline-block mb-3 text-center w-100">Bright Life nhận bằng khen của Bộ Y tế vì đóng góp tích cực cho cộng đồng</a>
                         <p class="mb-3 text-justify" style="text-align: justify;">Trong chương trình giao lưu nghệ thuật tối 21/10/2024 do Quỹ Hỗ trợ bệnh nhân ung thư - Ngày mai Tươi sáng (Bộ Y tế) tổ chức, Bright Life đã vinh dự được trao Bằng khen của Bộ trưởng Bộ Y tế vì có đóng góp tích cực cho cộng đồng năm 2024.</p>
-                        <a href="#" class="btn p-0 text-center d-block">Đọc thêm <i class="fa fa-arrow-right"></i></a>
+                        <a (click)="navigateTo('about')"   class="btn p-0 text-center d-block">Đọc thêm <i class="fa fa-arrow-right"></i></a>
                     </div>                            
                 </div>
             </div>
             <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="blog-item">
                     <div class="blog-img">
-                        <img src="assets/img/news-2.jpg" class="img-fluid rounded-top w-100" alt="">
-                        <div class="blog-categiry py-2 px-4">
-                            <span>Business</span>
-                        </div>
+                        <img src="assets/img/news-2.jpg" class="img-fluid rounded-top w-100" alt="">                        
                     </div>
                     <div class="blog-content p-4">
                         <div class="blog-comment d-flex justify-content-between mb-3">
@@ -193,19 +187,16 @@
                             <div class="small"><span class="fa fa-calendar text-primary"></span> 09/10/2024</div>
                             <div class="small"><span class="fa fa-comment-alt text-primary"></span> 32 Bình luận</div>
                         </div>
-                        <a href="#" class="h4 d-inline-block mb-3 text-center w-100">Đánh giá kết quả bước đầu phẫu thuật nội soi có sử dụng hệ thống Robot Da Vinci tại Bệnh viện Đa khoa Quốc tế Vinmec</a>
+                        <a (click)="navigateTo('about')"   class="h4 d-inline-block mb-3 text-center w-100">Đánh giá kết quả bước đầu phẫu thuật nội soi có sử dụng hệ thống Robot Da Vinci tại Bệnh viện Đa khoa Quốc tế Vinmec</a>
                         <p class="mb-3 text-justify" style="text-align: justify;">Nguyễn Hùng Cường * , Nguyễn Ngọc Khánh * , Vũ Ngọc Thắng * , Nguyễn Thu Hoài * , Hoàng Thọ * , Phùng Quang Thủy*.</p>
-                        <a href="#" class="btn p-0 text-center d-block">Đọc thêm <i class="fa fa-arrow-right"></i></a>
+                        <a (click)="navigateTo('about')"   class="btn p-0 text-center d-block">Đọc thêm <i class="fa fa-arrow-right"></i></a>
                     </div>                            
                 </div>
             </div>
             <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="blog-item">
                     <div class="blog-img">
-                        <img src="assets/img/news-3.jpg" class="img-fluid rounded-top w-100" alt="">
-                        <div class="blog-categiry py-2 px-4">
-                            <span>Business</span>
-                        </div>
+                        <img src="assets/img/news-3.jpg" class="img-fluid rounded-top w-100" alt="">                        
                     </div>
                     <div class="blog-content p-4">
                         <div class="blog-comment d-flex justify-content-between mb-3">
@@ -213,9 +204,9 @@
                             <div class="small"><span class="fa fa-calendar text-primary"></span> 21/9/2024</div>
                             <div class="small"><span class="fa fa-comment-alt text-primary"></span> 11 Bình luận</div>
                         </div>
-                        <a href="#" class="h4 d-inline-block mb-3 text-center w-100">Vinmec được vinh danh là “Bệnh viện tiến bộ nhất” và “An toàn cho người bệnh”</a>
+                        <a (click)="navigateTo('about')"   class="h4 d-inline-block mb-3 text-center w-100">Vinmec được vinh danh là “Bệnh viện tiến bộ nhất” và “An toàn cho người bệnh”</a>
                         <p class="mb-3 text-justify" style="text-align: justify;">Ngày 12/9, tại Hà Nội, Hệ thống Y tế Vinmec đã được Hiệp hội Quản lý Bệnh viện Châu Á vinh danh là “Bệnh viện Việt Nam tiến bộ nhất” và “An toàn người bệnh”. Việc giành giải thưởng ở cả hai hạng mục quan trọng trên ghi nhận nỗ lực của Vinmec trong việc nâng cao chất lượng dịch vụ y tế, thúc đẩy công tác quản lý vận hành theo các tiêu chuẩn quốc tế cao nhất.</p>
-                        <a href="#" class="btn p-0 text-center d-block">Đọc thêm <i class="fa fa-arrow-right"></i></a>
+                        <a (click)="navigateTo('about')"   class="btn p-0 text-center d-block">Đọc thêm <i class="fa fa-arrow-right"></i></a>
                     </div>                            
                 </div>
             </div>
@@ -238,13 +229,13 @@
                             <img src="assets/img/team-1.jpg" class="img-fluid rounded-top w-100 equal-height" alt="">
                             <div class="team-icon position-absolute bottom-0 start-0 p-3">
                                 <div class="d-flex align-items-center mb-2">
-                                    <a class="btn btn-primary btn-sm-square rounded-pill" href="">
+                                    <a (click)="navigateTo('about')" class="btn btn-primary btn-sm-square rounded-pill" href="">
                                         <i class="fas fa-stethoscope"></i>
                                     </a> 
                                     <span class="ms-2 text-black" style="font-size: 18px;">Gây mê hồi sức</span>
                                 </div>
                                 <div class="d-flex align-items-center mb-2">
-                                    <a class="btn btn-primary btn-sm-square rounded-pill" href="">
+                                    <a (click)="navigateTo('about')" class="btn btn-primary btn-sm-square rounded-pill" href="">
                                         <i class="fas fa-hospital"></i>
                                     </a> 
                                     <span class="ms-2 text-black" style="font-size: 18px;">Khoa Gây mê Phẫu thuật</span>
@@ -266,13 +257,13 @@
                         <img src="assets/img/team-2.jpg" class="img-fluid rounded-top w-100 equal-height" alt="">
                         <div class="team-icon">
                             <div class="d-flex align-items-center mb-2">
-                                <a class="btn btn-primary btn-sm-square rounded-pill" href="">
+                                <a (click)="navigateTo('about')" class="btn btn-primary btn-sm-square rounded-pill" href="">
                                     <i class="fas fa-stethoscope"></i>
                                 </a> 
                                 <span class="ms-2 text-black" style="font-size: 18px;">Chẩn đoán hình ảnh</span>
                             </div>
                             <div class="d-flex align-items-center mb-2">
-                                <a class="btn btn-primary btn-sm-square rounded-pill" href="">
+                                <a (click)="navigateTo('about')" class="btn btn-primary btn-sm-square rounded-pill" href="">
                                     <i class="fas fa-hospital"></i>
                                 </a> 
                                 <span class="ms-2 text-black" style="font-size: 18px;">Khoa Chẩn đoán hình ảnh</span>
@@ -292,13 +283,13 @@
                         <img src="assets/img/team-3.jpg" class="img-fluid rounded-top w-100 equal-height" alt="">
                         <div class="team-icon">
                             <div class="d-flex align-items-center mb-2">
-                                <a class="btn btn-primary btn-sm-square rounded-pill" href="">
+                                <a (click)="navigateTo('about')" class="btn btn-primary btn-sm-square rounded-pill" href="">
                                     <i class="fas fa-stethoscope"></i>
                                 </a> 
                                 <span class="ms-2 text-black" style="font-size: 18px;">Gây mê hồi sức</span>
                             </div>
                             <div class="d-flex align-items-center mb-2">
-                                <a class="btn btn-primary btn-sm-square rounded-pill" href="">
+                                <a (click)="navigateTo('about')" class="btn btn-primary btn-sm-square rounded-pill" href="">
                                     <i class="fas fa-hospital"></i>
                                 </a> 
                                 <span class="ms-2 text-black" style="font-size: 18px;">Khoa Gây mê Phẫu thuật</span>
@@ -318,13 +309,13 @@
                         <img src="assets/img/team-4.jpg" class="img-fluid rounded-top w-100 equal-height" alt="">
                         <div class="team-icon">
                             <div class="d-flex align-items-center mb-2">
-                                <a class="btn btn-primary btn-sm-square rounded-pill" href="">
+                                <a (click)="navigateTo('about')" class="btn btn-primary btn-sm-square rounded-pill" href="">
                                     <i class="fas fa-stethoscope"></i>
                                 </a> 
                                 <span class="ms-2 text-black" style="font-size: 18px;">Sản xuất tế bào</span>
                             </div>
                             <div class="d-flex align-items-center mb-2">
-                                <a class="btn btn-primary btn-sm-square rounded-pill" href="">
+                                <a (click)="navigateTo('about')" class="btn btn-primary btn-sm-square rounded-pill" href="">
                                     <i class="fas fa-hospital"></i>
                                 </a> 
                                 <span class="ms-2 text-black" style="font-size: 18px;">Khối Sản xuất Tế bào</span>
