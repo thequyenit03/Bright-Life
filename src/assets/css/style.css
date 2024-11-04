@@ -1,3 +1,8 @@
+.nav-item .nav-link.active {
+    font-weight: bold; /* Bạn có thể điều chỉnh kiểu chữ theo ý muốn */
+    color: #007bff; /* Màu sắc của liên kết active */
+  }
+
 .doctor-img {
     height: 400px;
     /* Adjust the height as needed */
