@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NavigationService } from '../../model/navigation/navigation.service';
+import { Messages } from '../../model/lang/MessagesVN';
+import { getMessages } from '../../model/lang/Messages';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +12,8 @@ import { NavigationService } from '../../model/navigation/navigation.service';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+
+  message:Messages = getMessages('');
 
   constructor(private navigationService: NavigationService){}
 

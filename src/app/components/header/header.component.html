@@ -26,11 +26,18 @@
                                 class="fab fa-twitter"></i></a> <a class="btn p-0 text-primary me-3" href="#"><i
                                 class="fab fa-instagram"></i></a> <a class="btn p-0 text-primary me-0" href="#"><i
                                 class="fab fa-linkedin-in"></i></a> </div>
-                    <div class="dropdown ms-3"> <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown">
-                            <small><i class="fas fa-globe-europe text-primary me-2"></i> Tiếng Việt</small> </a>
-                        <div class="dropdown-menu rounded"> <a href="#" class="dropdown-item">English</a> <a href="#"
-                                class="dropdown-item">Tiếng Việt</a> </div>
+                    <div class="dropdown ms-3">
+                        <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown">
+                            <small><i class="fas fa-globe-europe text-primary me-2"></i><span id="language-text">Tiếng
+                                    Việt</span></small>
+                        </a>
+                        <div class="dropdown-menu rounded">
+                            <a href="#" class="dropdown-item" onclick="setLanguage('en')">English</a>
+                            <a href="#" class="dropdown-item" onclick="setLanguage('vi')">Tiếng Việt</a>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -63,31 +70,45 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-0 mx-lg-auto">
-                    <a (click)="navigateTo('')" [routerLink]="['/']" class="nav-item nav-link" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" style="white-space: nowrap;">Trang chủ</a>
-                    <a (click)="navigateTo('about')" [routerLink]="['about']" class="nav-item nav-link" [routerLinkActive]="'active'" style="white-space: nowrap;">Về Bright Life</a>
-                    <a (click)="navigateTo('services')" [routerLink]="['services']" class="nav-item nav-link" [routerLinkActive]="'active'" style="white-space: nowrap;">Dịch vụ</a>
-                    <a (click)="navigateTo('blogs')" [routerLink]="['blogs']" class="nav-item nav-link" [routerLinkActive]="'active'" style="white-space: nowrap;">Tin tức</a>
+                    <a (click)="navigateTo('')" [routerLink]="['/']" class="nav-item nav-link"
+                        [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"
+                        style="white-space: nowrap;">{{message.HOME}}</a>
+                    <a (click)="navigateTo('about')" [routerLink]="['about']" class="nav-item nav-link"
+                        [routerLinkActive]="'active'" style="white-space: nowrap;">Về Bright Life</a>
+                    <a (click)="navigateTo('services')" [routerLink]="['services']" class="nav-item nav-link"
+                        [routerLinkActive]="'active'" style="white-space: nowrap;">Dịch vụ</a>
+                    <a (click)="navigateTo('blogs')" [routerLink]="['blogs']" class="nav-item nav-link"
+                        [routerLinkActive]="'active'" style="white-space: nowrap;">Tin tức</a>
                     <div class="nav-item dropdown" routerLinkActive="active">
-                        <a href="#" class="nav-link" data-bs-toggle="dropdown" style="white-space: nowrap;" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown" style="white-space: nowrap;"
+                            routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">
                             <span class="dropdown-toggle">Khác</span>
                         </a>
                         <div class="dropdown-menu">
-                            <a (click)="navigateTo('vision-mission')" [routerLink]="['vision-mission']" class="dropdown-item" routerLinkActive="active" style="white-space: nowrap;">Tầm nhìn và sứ mệnh</a>
-                            <a (click)="navigateTo('docter_experts')" [routerLink]="['docter_experts']" class="dropdown-item" routerLinkActive="active" style="white-space: nowrap;">Bác sĩ - chuyên gia</a>
-                            <a (click)="navigateTo('faq')" [routerLink]="['faq']" class="dropdown-item" routerLinkActive="active" style="white-space: nowrap;">Hỏi đáp</a>
+                            <a (click)="navigateTo('vision-mission')" [routerLink]="['vision-mission']"
+                                class="dropdown-item" routerLinkActive="active" style="white-space: nowrap;">Tầm nhìn và
+                                sứ mệnh</a>
+                            <a (click)="navigateTo('docter_experts')" [routerLink]="['docter_experts']"
+                                class="dropdown-item" routerLinkActive="active" style="white-space: nowrap;">Bác sĩ -
+                                chuyên gia</a>
+                            <a (click)="navigateTo('faq')" [routerLink]="['faq']" class="dropdown-item"
+                                routerLinkActive="active" style="white-space: nowrap;">Hỏi đáp</a>
                         </div>
-                    </div>                    
-                    <a (click)="navigateTo('contact')" [routerLink]="['contact']" class="nav-item nav-link" [routerLinkActive]="'active'" style="white-space: nowrap;">Liên hệ</a>
-                    <a (click)="navigateTo('booking')" [routerLink]="['booking']" class="nav-item nav-link" [routerLinkActive]="'active'" style="white-space: nowrap;">Đặt khám</a>
+                    </div>
+                    <a (click)="navigateTo('contact')" [routerLink]="['contact']" class="nav-item nav-link"
+                        [routerLinkActive]="'active'" style="white-space: nowrap;">Liên hệ</a>
+                    <a (click)="navigateTo('booking')" [routerLink]="['booking']" class="nav-item nav-link"
+                        [routerLinkActive]="'active'" style="white-space: nowrap;">Đặt khám</a>
                     <div class="nav-btn px-3">
-                        <button class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <button class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0"
+                            data-bs-toggle="modal" data-bs-target="#searchModal">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
                 </div>
             </div>
-            
-            
+
+
             <div class="d-none d-xl-flex flex-shrink-0 ps-4">
                 <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
                     data-wow-delay=".9s">
